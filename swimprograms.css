@@ -8,6 +8,70 @@
   background-size: cover;
 }
 
+/* sign in modal */
+.signinbtn{
+
+  background-color: rgba(3, 177, 244, 0.5);
+    color: white;
+}
+.signupbtn{
+  border: 2px solid #03B1F4;
+  color: #03B1F4;
+  background-color: #f8f8f8;
+}
+.signin input {
+  background-color: #e4eaea;
+  color: #FFF;}
+
+  .signin .form-group label {
+    color: red;
+    margin-bottom: 0;
+}
+.signin a,.contact a {
+  color: #03B1F4;
+}
+.theshark{
+  width: 140px;
+    
+     left: -8px !important;
+}
+.button:hover,.button:focus{
+  background:#03B1F4;
+  color:#fff;
+}
+
+/* dropdown location */
+.dropdown-item {
+  color: #03B1F4 !important;
+}
+.Titlelocation{
+  margin-top:10px;
+}
+
+.dropdown {
+  position: static !important;
+  color:rgba(0, 0, 0, 0.75);
+}
+.nav-link.show{
+  background: #fff;
+  color: #000 !important;
+}
+@media (min-width: 992px){
+  .dropdown-menu.show{
+    margin-top: -38px !important;
+    padding-top: 20px;
+    border-top: none;
+  }
+}
+
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-top: 0px !important;
+  width: 80% !important;
+  margin-right: auto !important;
+  margin-left: 10% !important;
+  padding: 0 2em 2em 2em;
+}
 
 /* Main */
 #reg_sign {

@@ -1,0 +1,272 @@
+.main-header {
+    background-color: #1A2E38;
+    font-family: 'Open Sans', sans-serif;
+}
+.splashes {
+    background-image: url("Images/about-us-hero.jpeg");
+    height: 485px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.splashes h1 {
+    color:#ffffff;
+    text-align: center;
+    padding: 15%;
+    padding-top:3em;
+    font-size: 3.75em;
+    font-family: 'Bodoni Moda', serif;
+}
+.philosophy {
+    background-image: url("backgroundImages/about-our-philosophy-bg.jpeg");
+    padding: 120px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.philosophy h1 {
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+}
+.philosophy p {
+    text-align: center;
+    font-size: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+}
+.goodjob {
+    background-image: url("backgroundImages/about-we-do-a-pretty-good-job-bg.jpeg");
+    padding: 140px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.goodjob h1 {
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+}
+.goodjob p {
+    text-align: center;
+    font-size: 1.5em ;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+}
+.hear {
+    text-align: center;
+    display: block;
+    font-size:1.6em;
+    margin:10px;
+    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.awards {
+    padding-top: 100px;
+    text-align: center;
+}
+.swimming {
+    background-image: url("Images/lap-swimming.jpeg");
+    padding: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.swimming h1 {
+    color:#ffffff;
+    text-align:center;
+    padding:15px;
+    font-size: 3.75em;
+    font-family: 'Bodoni Moda', serif;
+}
+
+.yer h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Bodoni Moda', serif;
+} 
+.yer p{
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2em;
+    margin: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.near {
+    margin: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact {
+    background-image: url("Images/contact-hero.jpeg");
+    padding: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
+}
+.contact h1 {
+    color:#ffffff;
+    text-align:center;
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 3.75em;
+}
+.par p {
+    padding: 50px;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+.button:hover,.button:focus{
+  background:#03B1F4;
+  color:#fff;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    padding-top:50px;
+}
+footer {
+    background-image: url(backgroundImages/footer-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.main-footer {
+    background-color: #E4EAEA;
+}
+.footer-logo {
+    text-align: center;
+    padding: 50px;
+}
+.fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55cdee;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: grey;
+  color: white;
+}
+.fa-yelp {
+  background: #bb0000;
+  color: white;
+}
+.nav {
+  text-align: center;
+}
+.social {
+  text-align: center;
+  padding:40px;
+}
+#county-numbers {
+  text-align: center;
+}
+#sponsers .row {
+    padding: 20px;
+}
+.card {
+    width:20rem;
+    margin:2rem;
+    width:80%;
+    outline: none ;
+}
+.d-block{
+    position:absolute;
+    top:380px;
+}
+@media(max-width: 992px){
+    .d-block{
+        position: absolute;
+        top:250px;
+    }
+}
+@media(max-width: 772px){
+    .d-block{
+        position: absolute;
+        top: 380px;
+    }
+}
+@media(max-width: 500px){
+    .d-block{
+        position: absolute;
+        top: 440px;
+    }
+}
+@media(max-width: 300px){
+    .d-block{
+        position: absolute;
+        top:180px;
+    }
+}
+/* sign in modal */
+.signinbtn {
+    background-color:rgba(3, 177, 244,0.5);
+    color:white;
+}
+.signupbtn {
+    border: 2px solid #03B1f4;
+    color: #03b1f4;
+    background-color: #f8f8f8;
+}
+.signin input {
+    background-color: #e4eaea;
+    color: #fff;
+}
+.signin .form-group label {
+    color:red;
+    margin-bottom: 0;
+}
+.signin a,.contact a {
+    color: #03b1f4;
+}
+.theshark{
+  width: 140px;
+    left: -8px !important;
+}
+
+/* dropdown location */
+.dropdown-item {
+  color: #03B1F4 !important;
+}
+.Titlelocation{
+  margin-top:10px;
+}
+
+.dropdown {
+  position: static !important;
+  color:rgba(0, 0, 0, 0.75);
+}
+.nav-link.show{
+  background: #fff;
+  color: #000 !important;
+}
+@media (min-width: 992px){
+  .dropdown-menu.show{
+    margin-top: -38px !important;
+    padding-top: 20px;
+    border-top: none;
+  }
+}
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-top: 0px !important;
+  width: 80% !important;
+  margin-right: auto !important;
+  margin-left: 10% !important;
+  padding: 0 2em 2em 2em;
+}
