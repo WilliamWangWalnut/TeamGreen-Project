@@ -18,7 +18,7 @@
     font-family: 'Bodoni Moda', serif;
 }
 .philosophy {
-    background-image: url("backgroundImages/about-our-philosophy-bg.jpeg");
+    background-image: url("Images/about-our-philosophy-bg.jpeg");
     padding: 120px;
     background-size:cover;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
     margin: 10px;
 }
 .goodjob {
-    background-image: url("backgroundImages/about-we-do-a-pretty-good-job-bg.jpeg");
+    background-image: url("Images/about-we-do-a-pretty-good-job-bg.jpeg");
     padding: 140px;
     background-size: cover;
     background-repeat: no-repeat;
