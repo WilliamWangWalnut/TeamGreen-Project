@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
          <!-- JQuery Library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- Vue -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
         <title>swimlessons</title>
     </head>
@@ -62,7 +64,7 @@
                                     <li class="nav-item"> <!-- Add nav-item class -->
                                         <a class="nav-link text-white" href="AdultPrograms.html">Adult Programs</a>  <!-- Add nav-link class -->
                                     </li>
-                                    
+                                    <!-- Locations Dropdown Menu -->
                                     <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#"
                                         id="navbarDropdown"
@@ -202,49 +204,32 @@
 
             <main class="mx-5 my-5">
                 <h1 class="text-center">Our Lesson Types</h1><br>
-                    <h2>Private Swim Lessons</h2>
-                    <p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months through adult. 
-                        Private swim lessons are the best option for accelerated learning. 
-                        Each lesson will allow our instructors to build on the momentum and skills 
-                        taught in the previous lesson with minimal downtime. From the basics of putting your 
-                        face into the water to refining your stroke technique, private lessons will offer the highest rate of progress. 
-                    </p>
-                    <a href="#">Learn more here!</a>
-                    <h2>Semi-Private Swim Lessons</h2>
-                    <p>At Splashes, our <a href="#">semi-private swim lessons</a> offer students ages 2.5 to 13 the opportunity 
-                        to interact with another student of a similar age and ability while still receiving personal 
-                        attention. Whether you would like us to pair your child with another student of similar age and 
-                        ability or would like to take lessons with a friend or sibling, our semi-private lessons are a 
-                        cost effective option. Students also have the opportunity to observe one another in the lesson. 
-                    </p>
-                    <a href="#">Learn more here!</a>
-                    <h2>Parent & Me Lessons</h2>
-                    <p>Our <a href="#">Parent and Me swimming lessons</a> (also known as “Mommy and Me” or “Daddy and Me” classes) 
-                        gives parents the opportunity to be hands-on with their little one while our instructors 
-                        facilitate the learning process between you and your child. These lessons provide a fun and 
-                        relaxed environment for you and your child in the water. Children ages 3 months through 3 years 
-                        of age can participate. However, we encourage children ages 2.5 and older to participate in private or semi-private swim lessons. 
-                    </p>
-                    <a href="#">Learn more here!</a>
-                    <h2>Stroke Clinic</h2>
-                    <p>Splashes <a href="#">Stroke Clinics</a> give students the opportunity to advance their swimming techniques
-                        while in a group setting. Our Stroke Clinic classes place emphasis on proper technique
-                        over speed and prepare students for swim team. Swimmers ages 5 and older who are
-                        level 8 or higher can benefit from participating in these 40 minute classes. A
-                        strong technical foundation will ensure that students’ progress much faster when the
-                        time comes for them to work on speed. Our stroke clinics are exciting and fast paced, 
-                        where each student will receive a great workout.
-                    </p>
-                    <a href="#">Learn more here!</a>
-                    <h2>Adult Swim Lessons</h2>
-                    <p>It is never too late to learn how to swim! Whether you are looking to learn the 
-                        basics or improve your technique to use swimming as a form of exercise, our trained 
-                        instructors will tailor each lesson to fit your individual needs. At Splashes, our adult 
-                        lessons are geared for swimmers ages 13 and older. From beginners to advanced, our <a href="#">adult 
-                        swimming lessons</a> are a great option for those looking to conquer their fear of the water 
-                        or who are looking to become stronger swimmers. </p>
-                    <a href="#">Learn more here!</a>
-                   
+                <!-- Using Vue Components -->
+                <div id="post1">
+                    <mycomponent1></mycomponent1>
+                    <mycomponent2></mycomponent2>
+                    <mycomponent3></mycomponent3>
+                </div>
+                <div id="post2">
+                    <mycomponent1></mycomponent1>
+                    <mycomponent2></mycomponent2>
+                    <mycomponent3></mycomponent3>
+                </div>
+                <div id="post3">
+                    <mycomponent1></mycomponent1>
+                    <mycomponent2></mycomponent2>
+                    <mycomponent3></mycomponent3>
+                </div>
+                <div id="post4">
+                    <mycomponent1></mycomponent1>
+                    <mycomponent2></mycomponent2>
+                    <mycomponent3></mycomponent3>
+                </div>
+                <div id="post5">
+                    <mycomponent1></mycomponent1>
+                    <mycomponent2></mycomponent2>
+                    <mycomponent3></mycomponent3>
+                </div>
             </main>
 
             <!-- Footer -->
@@ -383,6 +368,86 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous">
+        </script>
+
+        <!-- Vue for Texts -->
+        <script>
+            // Components
+            var app1 = new Vue({
+                el: '#post1',
+                components:{
+                    'mycomponent1': {
+                        template: '<h2>Private Swim Lessons</h2>'
+                    },
+                    'mycomponent2': {
+                        template: '<p>Our <a href="#">private swim lessons</a> provide one-on-one instruction for students ages three months through adult. Private swim lessons are the best option for accelerated learning. Each lesson will allow our instructors to build on the momentum and skills taught in the previous lesson with minimal downtime. From the basics of putting your face into the water to refining your stroke technique, private lessons will offer the highest rate of progress. </p>'
+                    },
+                    'mycomponent3': {
+                        template: '<a href="#">Learn more here!</a>'
+                    }
+                }
+            });
+
+            var app2 = new Vue({
+                el: '#post2',
+                components:{
+                    'mycomponent1': {
+                        template: '<h2>Semi-Private Swim Lessons</h2>'
+                    },
+                    'mycomponent2': {
+                        template: '<p>At Splashes, our <a href="#">semi-private swim lessons</a> offer students ages 2.5 to 13 the opportunity to interact with another student of a similar age and ability while still receiving personal attention. Whether you would like us to pair your child with another student of similar age and ability or would like to take lessons with a friend or sibling, our semi-private lessons are a cost effective option. Students also have the opportunity to observe one another in the lesson. </p>'
+                    },
+                    'mycomponent3': {
+                        template: '<a href="#">Learn more here!</a>'
+                    }
+                }
+            });
+
+            var app3 = new Vue({
+                el: '#post3',
+                components:{
+                    'mycomponent1': {
+                        template: '<h2>Parent & Me Lessons</h2>'
+                    },
+                    'mycomponent2': {
+                        template: '<p>Our <a href="#">Parent and Me swimming lessons</a> (also known as “Mommy and Me” or “Daddy and Me” classes) gives parents the opportunity to be hands-on with their little one while our instructors facilitate the learning process between you and your child. These lessons provide a fun and relaxed environment for you and your child in the water. Children ages 3 months through 3 years of age can participate. However, we encourage children ages 2.5 and older to participate in private or semi-private swim lessons. </p>'
+                    },
+                    'mycomponent3': {
+                        template: '<a href="#">Learn more here!</a>'
+                    }
+                }
+            });
+
+            var app4 = new Vue({
+                el: '#post4',
+                components:{
+                    'mycomponent1': {
+                        template: '<h2>Stroke Clinic</h2>'
+                    },
+                    'mycomponent2': {
+                        template: '<p>Splashes <a href="#">Stroke Clinics</a> give students the opportunity to advance their swimming techniqueswhile in a group setting. Our Stroke Clinic classes place emphasis on proper techniqueover speed and prepare students for swim team. Swimmers ages 5 and older who arelevel 8 or higher can benefit from participating in these 40 minute classes. Astrong technical foundation will ensure that students’ progress much faster when thetime comes for them to work on speed. Our stroke clinics are exciting and fast paced, where each student will receive a great workout.</p>'
+                    },
+                    'mycomponent3': {
+                        template: '<a href="#">Learn more here!</a>'
+                    }
+                }
+            });
+
+            var app5 = new Vue({
+                el: '#post5',
+                components:{
+                    'mycomponent1': {
+                        template: '<h2>Adult Swim Lessons</h2>'
+                    },
+                    'mycomponent2': {
+                        template: '<p>It is never too late to learn how to swim! Whether you are looking to learn the basics or improve your technique to use swimming as a form of exercise, our trained instructors will tailor each lesson to fit your individual needs. At Splashes, our adult lessons are geared for swimmers ages 13 and older. From beginners to advanced, our <a href="#">adult swimming lessons</a> are a great option for those looking to conquer their fear of the water or who are looking to become stronger swimmers. </p>'
+                    },
+                    'mycomponent3': {
+                        template: '<a href="#">Learn more here!</a>'
+                    }
+                }
+            });
+
         </script>
     </body>
 </html>
